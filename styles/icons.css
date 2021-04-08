@@ -1,0 +1,129 @@
+/* Instagram Icons */
+
+.gg-instagram {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    color: red;
+    background: white;
+    transform: scale(var(--ggs,1));
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 2px;
+    border-radius: 4px;
+    width: 20px;
+    height: 20px
+}
+    .gg-instagram::after,
+    .gg-instagram::before {
+        content: '';
+        display: block;
+        box-sizing: border-box;
+        position: absolute
+    }
+    .gg-instagram::after {
+        border: 2px solid;
+        left: 3px;
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        top: 3px
+    }
+    .gg-instagram::before {
+        border-radius: 3px;
+        width: 2px;
+        height: 2px;
+        background: currentColor;
+        right: 1px;
+        top: 1px
+    }
+
+/* Download Icons */
+
+.gg-software-download {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 16px;
+    height: 6px;
+    border: 2px solid;
+    border-top: 0;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    margin-top: 8px
+   }
+   
+   .gg-software-download::after {
+    content: '';
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    transform: rotate(-45deg);
+    left: 2px;
+    bottom: 4px
+   }
+   
+   .gg-software-download::before {
+    content: '';
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    border-radius: 3px;
+    width: 2px;
+    height: 10px;
+    background: currentColor;
+    left: 5px;
+    bottom: 5px
+   } 
+
+   /* || Hamburger */
+
+.hamRotate.active {
+    transform: rotate(45deg);
+    top: 0;
+    left: 0;
+  }
+  
+  .hamRotate180.active {
+    transform: rotate(180deg);
+  }
+  
+  .line {
+    fill: none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke:#000;
+    stroke-width:5.5;
+    stroke-linecap: round;
+  }
+  
+  .ham8 .top {
+    stroke-dasharray: 40 160;
+  }
+  
+  .ham8 .middle {
+    stroke-dasharray: 40 142;
+    transform-origin: 50%;
+    transition: transform 400ms;
+  }
+  
+  .ham8 .bottom {
+    stroke-dasharray: 40 85;
+    transform-origin: 50%;
+    transition: transform 400ms, stroke-dashoffset 400ms;
+  }
+  
+  .ham8.active .top {
+    stroke-dashoffset: -64px;
+  }
+  
+  .ham8.active .middle {
+    transform: rotate(90deg);
+  }
+  
+  .ham8.active .bottom {
+    stroke-dashoffset: -64px;
+  }  

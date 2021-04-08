@@ -1,0 +1,78 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+  background: #222;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+  
+h1 {
+  color: #4a8df8;
+  text-transform: uppercase;
+  font-size: 3em;
+}
+
+.container span,
+a {
+  color: #4a8df8;
+}
+
+a::after {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+}
+.line{
+  position: absolute;
+  background: #4a8df8;
+  width: 100%;
+  height: 2px;
+}
+.break {
+  position: absolute;
+  background :#222;
+  width: 6px;
+  height: 2px;
+}
+ 
+.dot1{
+  animation: loading 2s infinite;
+}
+
+.dot2{
+  animation: loading 2s 0.5s infinite;
+}
+.dot3{
+  animation: loading 2s 1s infinite;
+}
+
+.container p {
+  margin-top: 15px;
+  color: white;
+  text-align: center;
+}
+
+@keyframes loading {
+  from { 
+    left: 0; 
+  }
+  to { 
+    left: 100%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  h1 {
+    font-size: 2.4em;
+  }
+}
