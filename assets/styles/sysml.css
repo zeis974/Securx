@@ -171,6 +171,7 @@ nav .nav-links.active li a  {
 }
 
 .container .banner h1 {
+  height: 70px;
   color: transparent;
   font-size: 3.5em;
   background: linear-gradient(
@@ -228,6 +229,7 @@ nav .nav-links.active li a  {
 @media screen and (max-width: 960px) {
   .container .banner h1 {
     font-size: 3em;
+    height: 60px;  
   }
 
   .container .banner p {
