@@ -15,7 +15,7 @@
 
 - Les images présentes sur le site web son stocké sur le CDN de Glitch, le dossier `ressources` est utilisé pour les images de présentation pour le ficher `README.md`
 
-- La branche [glitch](https://github.com/zeis974/Securx/tree/glitch) est issue du code exporté sur Glitch, un PR sera fait vers la branche `main`` pour déployer celui-ci vers le site de production
+- La branche [glitch](https://github.com/zeis974/Securx/tree/glitch) est issue du code exporté sur Glitch, un PR sera fait vers la branche `main` pour déployer celui-ci vers le site de production
 
 ## Contribution
 
@@ -25,7 +25,7 @@ Ce repository est destiné à but éducatif, pour proposer des changements veuil
 
 Le code du projet peut-être réutilise, merci de ne pas copier et où utiliser le site web pour une utilisation autre que dans le cas où il a été conçu
 
-## Remerciements
+## Crédits
 
 Logo - [zeis974](https://twitter.com/zeis974)
 
