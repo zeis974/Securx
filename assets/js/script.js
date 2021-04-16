@@ -87,11 +87,12 @@ var removeStyle = function (all) {
 
 const versionLink = document.querySelector('#version a')
 const url = 'https://api.github.com/repos/zeis974/Securx/commits'
+const commitRepo = 'https://github.com/zeis974/Securx/commit/'
 
 fetch(url)
     .then(res => res.json())
     .then(data => {
-        versionLink.href = `https://github.com/zeis974/Securx/commit/${data[0].sha}`
+        versionLink.href = `${commitRepo}` + `${data[0].sha}`
     })
     .catch(function (error) {
         console.log(error);

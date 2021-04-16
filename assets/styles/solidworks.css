@@ -180,7 +180,8 @@ nav .nav-links.active li a  {
 
 .container .banner h1 {
   color: transparent;
-  font-size: 3.5em;
+  /* font-size: 3.5em; */
+  font-size: clamp(3em, 5vw, 3.5em);
   background: linear-gradient(
     to left,
     #ffc3a0,
@@ -229,15 +230,17 @@ nav .nav-links.active li a  {
 .container .banner .list p span {
   display: block;
   font-size: 3em;
+  font-size: clamp(2em, 5vw, 3em);
   color: #293233;
   font-weight: 800;
 }
+.container .banner > span {
+  color: #5f7172;
+  font-size: 0.8em;
+  font-weight: 700;
+}
 
 @media screen and (max-width: 960px) {
-  .container .banner h1 {
-    font-size: 3em;
-  }
-
   .container .banner p {
     padding: 0 5px;
   }
@@ -246,9 +249,9 @@ nav .nav-links.active li a  {
     flex-direction: column-reverse;
   } 
 
-  .container .banner .list p span {
+  /* .container .banner .list p span {
     font-size: 2em;
-  }
+  } */
 }
 
 /* Gallery */

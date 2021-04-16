@@ -1,30 +1,29 @@
 const counter = document.querySelector('#count')
 const hasteURL = new URL("https://hastebin.securx.tk")
-const defaultUrl = new URL(window.location.href)
+const currentURL = new URL(window.location.href)
+const notif = document.querySelector('#notification')
 
-let count = 5
+var count = 5
+
 setInterval(() => {
     counter.innerHTML = count
     count--
-    if (count < 0) location.replace(hasteURL + `${uurl}`)
+    try {
+        if (count < 0) location.replace(hasteURL + `${uurl}`)
+    } catch (err) {
+        console.log(err);
+        notif.className = "error"
+        notif.innerHTML = 'Une erreur c\'est produite : ' + err
+    }
 }, 1000)
 
-setTimeout(() => {
-    preFetch()
-}, 200)
-
-var preFetch = function () {
-    fetch(hasteURL)
-        .catch(function (error) {
-            console.log(error);
-        })
-}
-
 // Find search params url
-var uurl = defaultUrl.search.slice(1)
+var uurl = currentURL.search.slice(1)
 
 // Set url redirection
 var urlRedirect = document.querySelector('a[href="https://hastebin.securx.tk"]');
 if (urlRedirect) {
     urlRedirect.setAttribute('href', hasteURL + `${uurl}`)
 }
+
+// countDown()

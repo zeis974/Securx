@@ -7,6 +7,12 @@
   scroll-behavior: smooth;
 }
 
+@font-face {
+  font-family: boxicons;
+  src: url(https://cdn.jsdelivr.net/npm/boxicons@2.0.7/fonts/boxicons.woff2);
+  font-display: block;
+}
+
 ::selection {
   background-color: rgba(254, 20, 10, 0.4);
 }
@@ -35,7 +41,7 @@ body {
 header {
   position: relative;
   min-height: 8vh;
-  z-index: 5;
+  /* z-index: 5; */
 }
 nav  {
   display: flex;
@@ -180,7 +186,7 @@ section#sec-1 .container {
 }
 
 section#sec-1 .container h1 {
-  font-size: 2.5em;
+  font-size: clamp(2em, 5vw, 2.5em);
   line-height: 1;
   max-width: 400px;
   color: var(--securx-color);
@@ -359,12 +365,10 @@ section#sec-1 .carbon-banner p ~ a:hover::after {
     text-align: center;
     display: block;
     margin: 0 auto;
-    font-size: 2em;
     max-width: none; 
   }
 
   section#sec-1 .container p {
-    font-size: 0.9em;
     max-width: none;
   }
 
@@ -539,8 +543,7 @@ section#sec-3 .container .bloc {
 
 section#sec-3 .container .bloc h2 {
   color: #298afa;
-  font-size: 4em;
-
+  font-size: clamp(3em, 5vw, 4em);
   line-height: 1;
 }
 
@@ -636,10 +639,6 @@ section#sec-3 .container .bloc.sysml h2 {
     width: 100%;
   }
 
-  section#sec-3 .container .bloc h2 {
-      font-size: 3em;
-  }
-
   section#sec-3 .container .bloc a::before {
     left: 0;
   }
@@ -649,17 +648,13 @@ section#sec-3 .container .bloc.sysml h2 {
 
 section#sec-4 .container {
   max-width: 1100px;
+  text-align: center;
   margin: 0 auto 100px;
   padding-top: 80px;
 }
 
-section#sec-4 .container h3, 
-section#sec-4 .container p {
-  text-align: center;
-}
-
 section#sec-4 .container h3 {
-  font-size: 4em;
+  font-size: clamp(3em, 5vw, 4em);
   color: var(--securx-color);
 }
 
@@ -680,26 +675,23 @@ section#sec-4 .container .team-container {
 
 section#sec-4 .container .our-team {
   background: whitesmoke;
-
   box-shadow:  20px 20px 60px #bebebe,
-  -20px -20px 60px #FFF;
-
+              -20px -20px 60px #FFF;
   text-align: center;
   border-radius: 15px;
   overflow: hidden;
+  margin: 20px 0;
   position: relative;
-  margin: 0 25px;
   padding: 30px 70px;
-  
 }
 
 section#sec-4 .container .our-team .pic {
-    display: inline-block;
-    width: 130px;
-    height: 130px;
-    margin-bottom: 0;
-    z-index: 1;
-    position: relative;
+  display: inline-block;
+  width: 130px;
+  height: 130px;
+  margin-bottom: 0;
+  z-index: 1;
+  position: relative;
 }
 
 section#sec-4 .container .our-team .pic::before {
@@ -805,7 +797,6 @@ section#sec-4 .social li a:hover {
   section#sec-4 .container p {
     color: var(--grey-2);
     font-weight: 500;
-    margin: 20px 10px;
     padding-left: 7px;
   }
 
@@ -818,13 +809,11 @@ section#sec-4 .social li a:hover {
 footer {
   position: relative;
   width: 100%;
-  /* height: auto; */
   padding: 50px 30px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
 /* footer::before {
   background: #111;
   content: '';
@@ -1013,13 +1002,12 @@ footer .container .sec.aboutus p {
 #version a {
   color: #697176;
   user-select: none;
-  padding: 3px;
 }
 
 #version a::after {
-  content: '2.1.344';
+  content: '2.1.444';
   margin-left: 3px;
-  font-size: 11px;
+  font-size: 0.7em;
 }
 
 #version a.unfetch::after {
@@ -1029,14 +1017,15 @@ footer .container .sec.aboutus p {
 /* New Announcement */
 
 #new {
-  background: hsla(145, 63%, 49%, 40%);
+  background: #2ecc7066;
   padding: 10px 8px;
-  margin: -30px 0 25px 0; 
+  margin: -30px 0 30px 0;
   border-radius: 8px;
+  text-align: center;
 }
 
 #new span {
-  background: hsla(145, 63%, 49%, 60%);
+  background: #2ecc7099;
   padding: 3px;
   border-radius: 6px;
   color: #024702;
@@ -1045,11 +1034,4 @@ footer .container .sec.aboutus p {
 
 #new a {
   color: #222;
-}
-
-/* Carbon Badge */
-
-.carbonbadge {
-  display: flex;
-  margin-top: 20px;
 }
