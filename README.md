@@ -13,9 +13,9 @@
 
 - Le projet est hébergé sur [Glitch](https://glitch.com)
 
-- Les images présentes sur le site web son stocké sur le CDN de Glitch, le dossier `ressources` est utilisé pour les images de présentation pour le ficher `README.md`
+- Les images présentes sur le site web sont stocké sur le CDN de Glitch, le dossier `ressources` est utilisé pour les images de présentation pour le ficher `README.md`
 
-- La branche [glitch](https://github.com/zeis974/Securx/tree/glitch) est issue du code exporté sur Glitch, un PR sera fait vers la branche `main` pour déployer celui-ci vers le site de production
+- La branche [glitch](https://github.com/zeis974/Securx/tree/glitch) est issue du code exporté sur Glitch, une pull-request sera fait vers la branche `main` pour déployer celui-ci vers le site de production
 
 ## Contribution
 
