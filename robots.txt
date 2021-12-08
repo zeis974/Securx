@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://securx.tk/sitemap.xml
+Sitemap: https://securx.ml/sitemap.xml
