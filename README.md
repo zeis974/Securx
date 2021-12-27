@@ -1,4 +1,4 @@
-<p>⚠️<strong>ATTENTION</strong> : L'architecture de ce projet est basé selon la manière dont Glitch gère les sites statiques mais aussi selon quelques spécificités liées à la plateforme.</p>
+<p>⚠️<strong>ATTENTION</strong> : L'architecture de ce projet est basé sur la gestion des sites statique par Glitch</p>
 
 <hr>
 

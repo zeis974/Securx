@@ -1,5 +1,5 @@
 const counter = document.querySelector('#count')
-const hasteURL = new URL("https://hastebin.securx.tk")
+const hasteURL = new URL("https://bin.securx.ml")
 const currentURL = new URL(window.location.href)
 const notif = document.querySelector('#notification')
 
@@ -21,7 +21,7 @@ setInterval(() => {
 var uurl = currentURL.search.slice(1)
 
 // Set url redirection
-var urlRedirect = document.querySelector('a[href="https://hastebin.securx.tk"]');
+var urlRedirect = document.querySelector('a[href="https://bin.securx.ml"]');
 if (urlRedirect) {
     urlRedirect.setAttribute('href', hasteURL + `${uurl}`)
 }
